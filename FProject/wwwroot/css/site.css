@@ -59,8 +59,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+   font-family:"Comic Sans MS", cursive, sans-serif !important;
 }
 .footer {
   position: absolute;
@@ -68,4 +69,41 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+@media (min-width: 1800px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1600px;
+    }
+}
+
+.card-home {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background: linear-gradient( 180deg, rgb(81 101 255 / 10%), rgb(229 0 255 / 11%));
+    background-clip: border-box;
+  
+    border-radius: .25rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( 180deg, rgb(81, 101, 255), rgb(229, 0, 255))1 100%;
+    border-image-slice: 1;
+}
+
+.bg-light-login {
+    background-color: #f8f9fac9 !important;
+}
+.block-style-a{
+    color:black;
+
+}
+
+.block-style-a:hover{
+    color:darkslategrey;
+    text-decoration:none;
 }
